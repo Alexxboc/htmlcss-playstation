@@ -1,0 +1,20 @@
+/* Variables */
+
+:root {
+--playstation-darkest-color: #000000;
+--playstation-primary-color: #2D64E7;
+--playstation-dark-color: #363636;
+--playstation-primary-text: #157DD2;
+--playstation-text-white: #EEF2F8;
+--playstation-dark-text: #1F1F1F;
+--playstation-light-text: #757575;
+--playstation-danger-text: #CC3C0F;
+--playstation-primary-border: #0072CE;
+--playstation-bg-light: #BEBCBB;
+}
+
+/* Common rules */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}

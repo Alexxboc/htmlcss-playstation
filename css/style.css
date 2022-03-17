@@ -17,17 +17,27 @@
 
 /* Utilities */
 
-.playstation_bg_darkest {
+.bg_darkest {
     background-color: var(--playstation-darkest-color);
 }
 
 .bg_dark {
-    background-color: var(--playstation-dark-color)
+    background-color: var(--playstation-dark-color) !important;
 }
+
+
 /* Common rules */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Jumbotron */
+.jumbotron {
+    height: 500px;
+    background-image: url(../img/returnal-listing-thumb-01-ps5.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 

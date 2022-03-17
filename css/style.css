@@ -25,6 +25,10 @@
     background-color: var(--playstation-dark-color) !important;
 }
 
+.bg_danger {
+    background-color: var(--playstation-danger-text) !important;
+}
+
 
 /* Common rules */
 
@@ -33,11 +37,32 @@ body {
 }
 
 /* Jumbotron */
+
+.jumbotron>.container img {
+    height: 60px;
+}
 .jumbotron {
-    height: 500px;
-    background-image: url(../img/returnal-listing-thumb-01-ps5.jpg);
+    height: 800px;
+    background-image: url(../img/jumbo-bg.png);
     background-size: cover;
     background-position: center;
+}
+
+
+@media  screen and (min-width: 576px) {
+    
+}
+
+@media  screen and (min-width: 768px) {
+    .jumbotron>.container img {
+        height: 75px;
+    }
+}
+
+@media  screen and (min-width: 992px) {
+    .jumbotron>.container img {
+        height: 45px;
+    }
 }
 
 

@@ -70,6 +70,7 @@ body {
 
 .slider img {
     border-radius: 10px;
+    transition: 3s;
 }
 
 .slider img:hover {
@@ -93,9 +94,14 @@ body {
         bottom: 0;
     }
 
-    100% {
+    50% {
         left: 0;
         bottom: 15px;
+    }
+
+    100% {
+        left: 0;
+        bottom: 0;
     }
 }
 

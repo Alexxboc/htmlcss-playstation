@@ -13,6 +13,7 @@
 --playstation-bg-light: #BEBCBB;
 --playstation-bg-white: #FFFFFF;
 --playstation_bg_transparent: #D9DADC;
+--playstation_bg_dark_blue: #161C3B;
 
 }
 
@@ -48,6 +49,10 @@
 
 .bg_transparent {
     background-color: var(--playstation_bg_transparent) !important;
+}
+
+.bg_dark_blue {
+    background-color: var(--playstation_bg_dark_blue);
 }
 
 .play_text_white {
@@ -156,7 +161,8 @@ body {
 
 /* Playstation plus */
 
-.playstation_plus .d_none {
+.playstation_plus .d_none,
+.playstation_now .d_none {
     display: none;
 }
 
@@ -173,15 +179,9 @@ body {
         display: block;
     }
 
-    .playstation_plus .d_none {
+    .playstation_plus .d_none,
+    .playstation_now .d_none {
         display: block;
-    }
-
-    .playstation_plus .special_lg {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
     }
 
 }
@@ -191,7 +191,8 @@ body {
         height: 45px;
     }
 
-    .playstation_plus .special_lg {
+    .playstation_plus .special_lg,
+    .playstation_now .special_lg {
         display: flex;
         flex-direction: column;
         justify-content: center;

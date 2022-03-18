@@ -17,7 +17,13 @@
 
 /* Utilities */
 
-.relative
+.p_relative {
+    position: relative;
+}
+
+.bg_primary {
+    background-color: var(--playstation-primary-color);
+}
 
 .bg_darkest {
     background-color: var(--playstation-darkest-color);
@@ -31,8 +37,24 @@
     background-color: var(--playstation-danger-text) !important;
 }
 
+.bg_dark_gray {
+    background-color: var(--playstation-dark-text);
+}
+
 .play_text_white {
     color: var(--playstation-text-white) !important;
+}
+
+.play_text_primary {
+    color: var(--playstation-primary-text);
+}
+
+.play_text_dark {
+    color: var(--playstation-dark-text);
+}
+
+.play_text_light {
+    color: var(--playstation-light-text);
 }
 
 
@@ -42,7 +64,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Effects */
+.slider img, 
+.new_releases img {
+    border-radius: 15px;
+}
+
+/* Navbar */
 
 .dropdown-toggle::after {
     border: none;
@@ -60,7 +87,7 @@ body {
     height: 60px;
 }
 .jumbotron {
-    height: 800px;
+    height: 700px;
     background-image: url(../img/jumbo-bg.png);
     background-size: cover;
     background-position: center;
@@ -68,10 +95,7 @@ body {
 
 /* Slider */
 
-.slider img {
-    border-radius: 10px;
-    transition: 3s;
-}
+
 
 .slider img:hover {
     border: 2px solid var(--playstation-primary-border);
@@ -87,6 +111,7 @@ body {
     animation-name: move;
     animation-duration: 3s;
 }
+
 
 @keyframes move {
     0% {
@@ -105,6 +130,23 @@ body {
     }
 }
 
+/* Playstation 5 */
+
+.playstation_5 .card_text {
+    display: none;
+}
+
+/* Banner */
+
+.banner {
+    height: 700px;
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Playstation 4 */
+
 
 
 @media  screen and (min-width: 576px) {
@@ -114,6 +156,10 @@ body {
 @media  screen and (min-width: 768px) {
     .jumbotron>.container img {
         height: 75px;
+    }
+
+    .playstation_5 .card_text {
+        display: block;
     }
 }
 

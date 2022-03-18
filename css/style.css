@@ -177,6 +177,13 @@ body {
         display: block;
     }
 
+    .playstation_plus .special_lg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
 }
 
 @media  screen and (min-width: 992px) {

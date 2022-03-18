@@ -12,6 +12,7 @@
 --playstation-primary-border: #0072CE;
 --playstation-bg-light: #BEBCBB;
 --playstation-bg-white: #FFFFFF;
+--playstation_bg_transparent: #D9DADC;
 
 }
 
@@ -39,6 +40,14 @@
 
 .bg_dark_gray {
     background-color: var(--playstation-dark-text);
+}
+
+.bg_light {
+    background-color: var(--playstation-bg-light);
+}
+
+.bg_transparent {
+    background-color: var(--playstation_bg_transparent) !important;
 }
 
 .play_text_white {
@@ -145,9 +154,11 @@ body {
     background-position: center;
 }
 
-/* Playstation 4 */
+/* Playstation plus */
 
-
+.playstation_plus .d_none {
+    display: none;
+}
 
 @media  screen and (min-width: 576px) {
     
@@ -161,11 +172,23 @@ body {
     .playstation_5 .card_text {
         display: block;
     }
+
+    .playstation_plus .d_none {
+        display: block;
+    }
+
 }
 
 @media  screen and (min-width: 992px) {
     .jumbotron>.container img {
         height: 45px;
+    }
+
+    .playstation_plus .special_lg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
 }
 

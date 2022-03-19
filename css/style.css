@@ -159,12 +159,27 @@ body {
     background-position: center;
 }
 
+ /* Playstation 4 */
+ .registered_trademark {
+    line-height: 0.5;
+}
+
+.registered_trademark::after {
+    border: none;
+    font: var(--fa-font-regular);
+    content: "\f25d";
+    font-size: 14px;
+    vertical-align: super;
+  }
+
 /* Playstation plus */
 
 .playstation_plus .d_none,
 .playstation_now .d_none {
     display: none;
 }
+
+
 
 @media  screen and (min-width: 576px) {
     
@@ -184,6 +199,12 @@ body {
         display: block;
     }
 
+    .social_media .container {
+        max-width: 80%;
+    }
+
+   
+
 }
 
 @media  screen and (min-width: 992px) {
@@ -198,7 +219,12 @@ body {
         justify-content: center;
         align-items: flex-start;
     }
+
+    .social_media .container {
+        max-width: 50%;
+    }
 }
+
 
 
 

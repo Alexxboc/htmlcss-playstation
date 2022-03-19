@@ -14,13 +14,18 @@
 --playstation-bg-white: #FFFFFF;
 --playstation_bg_transparent: #D9DADC;
 --playstation_bg_dark_blue: #161C3B;
+--playstation_bg_blue: #00439C;
 
 }
 
 /* Utilities */
 
-.p_relative {
-    position: relative;
+.unstyled {
+    list-style: none;
+}
+
+.decor_none {
+    text-decoration: none;
 }
 
 .bg_primary {
@@ -41,6 +46,10 @@
 
 .bg_dark_gray {
     background-color: var(--playstation-dark-text);
+}
+
+.bg_blue {
+    background-color: var(--playstation_bg_blue)
 }
 
 .bg_light {
@@ -177,6 +186,12 @@ body {
 .playstation_plus .d_none,
 .playstation_now .d_none {
     display: none;
+}
+
+footer .country_text,
+footer a,
+footer .copyright {
+    font-size: 12px;
 }
 
 

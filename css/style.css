@@ -135,39 +135,18 @@ body {
 
 /* Slider */
 
+.slider img {
+    transition: all 1000ms;
+}
 
-
-.slider img:hover {
+.active {
     border: 2px solid var(--playstation-primary-border);
     padding:2px;
 }
 
-.slider .col {
-    position: relative;
-}
-
-.move_up:hover {
-    position: absolute;
-    animation-name: move;
-    animation-duration: 3s;
-}
-
-
-@keyframes move {
-    0% {
-        left: 0;
-        bottom: 0;
-    }
-
-    50% {
-        left: 0;
-        bottom: 15px;
-    }
-
-    100% {
-        left: 0;
-        bottom: 0;
-    }
+.move_up:hover img {
+    transform: translateY(-30px);
+    transition: all 1000ms;
 }
 
 /* Playstation 5 */

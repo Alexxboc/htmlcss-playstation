@@ -28,6 +28,10 @@
     text-decoration: none;
 }
 
+.bg_white {
+    background-color: var(--playstation-bg-white);
+}
+
 .bg_primary {
     background-color: var(--playstation-primary-color);
 }
@@ -102,6 +106,19 @@ body {
 
   .dropdown-toggle.show::after {
     content: "\f106";
+  }
+
+  .dropdown_menu_top {
+      border-bottom: 0.5px solid var(--playstation-bg-light)
+  }
+
+  .dropdown_menu_bottom a::before {
+    font: var(--fa-font-solid);
+    content: "\f111";
+    font-size: 4px;
+    color: var(--playstation-primary-text);
+    vertical-align: middle;
+    margin-right: 0.5rem;
   }
 
 /* Jumbotron */

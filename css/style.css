@@ -179,7 +179,7 @@ body {
 /* Banner */
 
 .banner {
-    height: 700px;
+    height: 620px;
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
     background-size: cover;
     background-position: center;
@@ -218,10 +218,6 @@ footer .copyright {
 }
 
 @media  screen and (min-width: 768px) {
-    .jumbotron>.container img {
-        height: 75px;
-    }
-
     .playstation_5 .card_text {
         display: block;
     }
@@ -240,10 +236,6 @@ footer .copyright {
 }
 
 @media  screen and (min-width: 992px) {
-    .jumbotron>.container img {
-        height: 45px;
-    }
-
     .playstation_plus .special_lg,
     .playstation_now .special_lg {
         display: flex;
@@ -254,6 +246,12 @@ footer .copyright {
 
     .social_media .container {
         max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .banner img {
+        height: 150px;
     }
 }
 

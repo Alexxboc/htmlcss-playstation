@@ -212,7 +212,7 @@ footer .copyright {
 
 @media  screen and (min-width: 992px) {
     .social_media .container {
-        max-width: 50%;
+        width: 50%;
     }
 }
 

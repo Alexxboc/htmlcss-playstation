@@ -84,6 +84,15 @@
     color: var(--playstation-light-text);
 }
 
+.border_inset:hover {
+    box-shadow:0px 0px 0px 2px black inset;
+}
+
+.border_offset:hover {
+    box-shadow:0px 0px 0px 2px black;
+}
+
+
 
 /* Common rules */
 
@@ -121,6 +130,8 @@ body {
     margin-right: 0.5rem;
   }
 
+  
+
 /* Jumbotron */
 
 
@@ -131,26 +142,39 @@ body {
     background-position: top center;
 }
 
+
 /* Slider */
 
 .slider img {
     transition: all 1000ms;
 }
 
-.active {
+.slider .active {
     border: 2px solid var(--playstation-primary-border);
     padding:2px;
 }
 
 .move_up:hover img {
-    transform: translateY(-30px);
+    transform: translateY(-20px);
     transition: all 1000ms;
 }
+
 
 /* Playstation 5 */
 
 .playstation_5 .card_text {
     display: none;
+}
+
+.playstation_5 .opacity {
+    opacity:0.5;
+}
+.playstation_5 .card_slider:hover img {
+    opacity: 1;
+}
+
+.playstation_5 .card_slider:hover {
+    border-bottom: 2px solid var(--playstation-primary-border);
 }
 
 /* Banner */
@@ -186,6 +210,10 @@ footer .country_text,
 footer a,
 footer .copyright {
     font-size: 12px;
+}
+
+.offset_transparent:hover {
+    box-shadow:0px 0px 0px 2px var(--playstation_bg_transparent);
 }
 
 

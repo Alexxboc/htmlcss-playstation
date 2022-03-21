@@ -123,14 +123,12 @@ body {
 
 /* Jumbotron */
 
-.jumbotron>.container img {
-    height: 60px;
-}
+
 .jumbotron {
-    height: 700px;
+    height: 750px;
     background-image: url(../img/jumbo-bg.png);
     background-size: cover;
-    background-position: center;
+    background-position: top center;
 }
 
 /* Slider */
@@ -210,19 +208,9 @@ footer .copyright {
         max-width: 80%;
     }
 
-   
-
 }
 
 @media  screen and (min-width: 992px) {
-    .playstation_plus .special_lg,
-    .playstation_now .special_lg {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
     .social_media .container {
         max-width: 50%;
     }

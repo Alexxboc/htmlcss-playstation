@@ -182,7 +182,7 @@ body {
 }
 
 .border_active {
-    border: solid 2px transparent;
+    border-bottom: solid 2px transparent;
 }
 
 .playstation_5 .border_active:hover {
